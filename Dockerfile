@@ -8,7 +8,8 @@ RUN apk add --no-cache \
 	php7-mbstring \
 	php7-pdo \
 	php7-openssl\
-	php7-dom
+	php7-dom\
+	php7-xml
 
 RUN composer create-project --prefer-dist laravel/lumen /var/www/html
 
