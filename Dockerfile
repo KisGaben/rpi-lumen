@@ -18,5 +18,5 @@ RUN composer create-project --prefer-dist laravel/lumen /var/www/html
 
 WORKDIR /var/www/html
 
-CMD ["php", "-S" ,"localhost:80", "-t", "public"]
+CMD ["php", "-S" ,"0.0.0.0:80", "-t", "public"]
 
