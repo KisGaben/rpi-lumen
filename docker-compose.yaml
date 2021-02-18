@@ -8,10 +8,7 @@ networks:
 
 services: 
   lumen:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: lumen
+    image: kisgaben/rpi-lumen
     working_dir: /var/www/html
     networks:
       - proxy
