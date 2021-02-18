@@ -11,7 +11,8 @@ RUN apk add --no-cache \
 	php7-dom \
 	php7-xml \
 	php7-json \
-	php7-xmlwriter
+	php7-xmlwriter \
+	php7-tokenizer
 
 RUN composer create-project --prefer-dist laravel/lumen /var/www/html
 
