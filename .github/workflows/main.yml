@@ -30,10 +30,6 @@ jobs:
           push: true
           tags: kisgaben/rpi-lumen:latest
           platforms: linux/arm/v6, linux/arm/v7
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          registry: docker.pkg.github.com
-          repository: ${{ github.repository }}/rpi-lumen
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
